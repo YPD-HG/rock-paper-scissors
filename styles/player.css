@@ -1,0 +1,26 @@
+#player{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    /* justify-content: center; */
+    /* background-color: orange; */
+    flex-direction: column;
+    height: 355px;
+    width: 600px;
+}
+
+#p_heading {
+    position: absolute;
+    /* background-color: yellow; */
+    top: 2px;
+    left: 280px;
+}
+
+#p_body {
+    position: absolute;
+    top: 110px;
+    
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    /* background-color: green; */
+}
