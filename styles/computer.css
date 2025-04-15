@@ -3,9 +3,9 @@
     display: flex;
     top: 0;
     /* justify-content: center; */
-    /* background-color: orange; */
+    /* background-color: palevioletred; */
     flex-direction: column;
-    height: 300px;
+    height: 320px;
     width: 600px;
     /* background-color: purple; */
 }
