@@ -1,0 +1,31 @@
+#computer {
+    position: absolute;
+    display: flex;
+    top: 0;
+    /* justify-content: center; */
+    /* background-color: orange; */
+    flex-direction: column;
+    height: 300px;
+    width: 600px;
+    /* background-color: purple; */
+}
+
+#c_heading {
+    position: absolute;
+    /* background-color: yellow; */
+    top: 2px;
+    left: 260px;
+}
+
+#c_body {
+    position: absolute;
+    top: 110px;
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    /* background-color: green; */
+}
+
+#rock #hand #paper {
+    height: 150px;
+    width: 150px;
+}

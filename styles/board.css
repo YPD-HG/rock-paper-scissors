@@ -1,5 +1,6 @@
 #board {
     display: flex;
+    position: relative;
     background-color: lightcyan;
     justify-content: center;
     flex-direction: column;
