@@ -15,6 +15,8 @@ let playerWins = document.querySelector('#p_heading span')
 
 let k_p = 0;
 let k_c = 0;
+compWins.innerHTML = `${k_c}`
+playerWins.innerHTML = `${k_p}`
 
 // Operation Functions
 function getRandomInt(min, max) {
@@ -58,13 +60,13 @@ function checkGesture(p_choice) {
             verdict.style.left = `195px`
             verdict.style.color = `#2e7d32`
             k_p++;
-            playerWins.innerHTML = `${k}`
+            playerWins.innerHTML = `${k_p}`
         } else {
             verdict.innerHTML = `Computer won :(`
             verdict.style.left = `237px`
             verdict.style.color = `#c62828`
             k_c++;
-            compWins.innerHTML = `${k}`
+            compWins.innerHTML = `${k_c}`
         }
 }
 
@@ -109,6 +111,6 @@ newGameBtn.addEventListener('click', () => {
 document.getElementById('clean').addEventListener('click', () => {
     k_p = 0;
     k_c = 0;
-    compWins.innerHTML = `${k}`
-    playerWins.innerHTML = `${k}`
+    compWins.innerHTML = `${k_c}`
+    playerWins.innerHTML = `${k_p}`
 })
