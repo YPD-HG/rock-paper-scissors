@@ -1,9 +1,9 @@
-#player{
+#player {
     position: absolute;
     display: flex;
     bottom: 0;
     /* justify-content: center; */
-    /* background-color: orange; */
+    /* background-color:chartreuse; */
     flex-direction: column;
     height: 355px;
     width: 600px;
@@ -13,14 +13,42 @@
     position: absolute;
     /* background-color: yellow; */
     top: 2px;
-    left: 280px;
+    left: 275px;
 }
 
 #p_body {
+    display: grid;
     position: absolute;
     top: 110px;
-    
-    display: grid;
-    grid-template-columns: 1fr 600px 1fr;
+    grid-template-columns: 100px 100px 100px;
     /* background-color: green; */
+    column-gap: 70px;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+#newGame {
+    position: absolute;
+    height: 50px;
+    width: 125px;
+    top: 250px;
+    left: 240px;
+}
+
+#p_gesture_0 img {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: darken;
+}
+
+#p_gesture_1 img {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: darken;
+}
+
+#p_gesture_2 img {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: darken;
 }

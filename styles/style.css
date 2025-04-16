@@ -3,3 +3,8 @@ body {
     font-family: "Inter", serif;
     background-color: lightblue;
 }
+
+button{
+    height: 125px;
+    width: 125px;
+}
