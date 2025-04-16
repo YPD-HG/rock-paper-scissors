@@ -13,10 +13,10 @@ let newGameBtn = document.querySelector('#newGame')
 let compWins = document.querySelector('#c_heading span')
 let playerWins = document.querySelector('#p_heading span')
 
-let k_p = 0;
-let k_c = 0;
-compWins.innerHTML = `${k_c}`
-playerWins.innerHTML = `${k_p}`
+let kp = 0;
+let kc = 0;
+compWins.innerHTML = `${kc}`
+playerWins.innerHTML = `${kp}`
 
 // Operation Functions
 function getRandomInt(min, max) {
@@ -59,14 +59,14 @@ function checkGesture(p_choice) {
             verdict.innerHTML = `You won!, congratulations :)`
             verdict.style.left = `195px`
             verdict.style.color = `#2e7d32`
-            k_p++;
-            playerWins.innerHTML = `${k_p}`
+            kp++;
+            playerWins.innerHTML = `${kp}`
         } else {
             verdict.innerHTML = `Computer won :(`
             verdict.style.left = `237px`
             verdict.style.color = `#c62828`
-            k_c++;
-            compWins.innerHTML = `${k_c}`
+            kc++;
+            compWins.innerHTML = `${kc}`
         }
 }
 
@@ -109,8 +109,8 @@ newGameBtn.addEventListener('click', () => {
 })
 
 document.getElementById('clean').addEventListener('click', () => {
-    k_p = 0;
-    k_c = 0;
-    compWins.innerHTML = `${k_c}`
-    playerWins.innerHTML = `${k_p}`
+    kp = 0;
+    kc = 0;
+    compWins.innerHTML = `${kc}`
+    playerWins.innerHTML = `${kp}`
 })
