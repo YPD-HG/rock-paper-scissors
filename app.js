@@ -6,12 +6,14 @@ gesture[1] = `<img src="icons/paper.png" alt="">`;
 gesture[2] = `<img src="icons/scissors.svg" alt="">`;
 
 let verdict = document.querySelector('#verdict')
-// let winVerdict = document.querySelector('#verdict #who')
-// let winVerdictEmo = document.querySelector('#verdict #emo')
-// let drawVerdict = document.querySelector('#verdict')
 let computerBtn = document.querySelector('#comp_choice')
 let ComputerChoice = document.querySelector('#comp_choice').innerHTML
 let newGameBtn = document.querySelector('#newGame')
+
+let compWins = document.querySelector('#c_heading span')
+let playerWins = document.querySelector('#p_heading span')
+
+let k = 0;
 
 // Operation Functions
 function getRandomInt(min, max) {
@@ -51,18 +53,17 @@ function checkGesture(p_choice) {
     }
     else
         if (playerWin(p_choice)) {
-            console.log("*********")
             verdict.innerHTML = `You won!, congratulations :)`
             verdict.style.left = `195px`
             verdict.style.color = `#2e7d32`
-            // winVerdict.innerHTML = `Player`
-            // winVerdictEmo.innerHTML = `:)`
+            k++;
+            playerWins.innerHTML = `${k}`
         } else {
             verdict.innerHTML = `Computer won :(`
-            verdict.style.left = `195px`
+            verdict.style.left = `237px`
             verdict.style.color = `#c62828`
-            // winVerdict.innerHTML = `Computer`
-            // winVerdictEmo.innerHTML = `:(`
+            k++;
+            compWins.innerHTML = `${k}`
         }
 }
 
@@ -88,6 +89,7 @@ function playerWin(p_choice) {
 newGameBtn.addEventListener('click', () => {
     verdict.innerHTML = ``;
     lock = 0;
+
     computerBtn.innerHTML = `<div class="snippet" data-title="dot-pulse">
                             <div class="stage">
                                 <h3>Computer Choosing</h3>
@@ -101,5 +103,11 @@ newGameBtn.addEventListener('click', () => {
         </div>
     </div>`;
     }, 1000)
+})
 
+document.getElementById('clean').addEventListener('click', () => {
+    k = 0;
+
+    compWins.innerHTML = `${k}`
+    playerWins.innerHTML = `${k}`
 })

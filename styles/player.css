@@ -35,6 +35,14 @@
     left: 240px;
 }
 
+#clean {
+    position: absolute;
+    height: 50px;
+    width: 125px;
+    top: 250px;
+    left: 410px;
+}
+
 #p_gesture_0 img {
     width: 100%;
     height: auto;
