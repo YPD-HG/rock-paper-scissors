@@ -58,7 +58,7 @@ function checkGesture(p_choice) {
             // winVerdict.innerHTML = `Player`
             // winVerdictEmo.innerHTML = `:)`
         } else {
-            verdict.innerHTML = `Computer won, who cares :(`
+            verdict.innerHTML = `Computer won :(`
             verdict.style.left = `195px`
             verdict.style.color = `#c62828`
             // winVerdict.innerHTML = `Computer`
